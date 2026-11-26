@@ -1,22 +1,17 @@
 # TikTok-мод для FreakRating
 
-Открывает TikTok поверх игры по клавише **F8**, не сворачивая мир.
-
 ## Установка
 
-Мод состоит из двух частей: главный процесс (`tiktok-phone.js`) и скрипт для мира (`mods/tiktok-app.js`). Поэтому он собирается из исходников:
+1. Установи чистый лаунчер: https://github.com/dhshfhd2-bot/FreakRating-Launcher
+2. Скопируй `mods/tiktok.js` в папку `mods` рядом с `FreakRating.exe`.
+3. Перезапусти лаунчер.
 
-1. Положи этот репозиторий рядом с клонированным `FreakRating-Launcher`.
-2. Запусти:
-   ```powershell
-   .\install.ps1
-   ```
-3. Готовый установщик с TikTok появится в `FreakRating-Launcher\release\FreakRating-Setup-0.4.1.exe`.
+F8 открывает TikTok в отдельном окне, F8 ещё раз — возвращает фокус к нему.
 
-## Использование
+## Полноценный оверлей (по желанию)
 
-- **F8** — открыть/закрыть TikTok.
-- Колесо мыши — прокрутка ленты.
+Если нужен TikTok прямо поверх игры без отдельного окна, используй `install.ps1`.
+Для этого репозиторий должен лежать рядом с клонированным `FreakRating-Launcher`.
 
 Лаунчер: https://github.com/dhshfhd2-bot/FreakRating-Launcher  
 Оригинальный лаунчер: https://github.com/Egorrko/freakrating-client
