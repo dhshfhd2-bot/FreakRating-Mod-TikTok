@@ -1,32 +1,20 @@
-# TikTok для FreakRating
+# TikTok
 
-Оверлей TikTok поверх игры, открывается по **F8** и иконкой в телефоне.
+F8 — оверлей поверх игры, иконка в телефоне.
 
-## Файлы
+## Все файлы мода
 
-| Файл | Куда положить |
+| Файл в репозитории | Куда ставить |
 |---|---|
-| `tiktok-phone.js` | в корень клиента, рядом с `launcher.js` |
-| `mods/tiktok-app.js` | старая версия, **не нужна** — `tiktok-phone.js` внедряет код сам |
+| `tiktok-phone.js` | корень клиента, рядом с `launcher.js` |
+| `client/tiktok-phone.js` | копия для полной сборки |
+| `client/mods/tiktok-app.js` | старый вариант скрипта телефона (обычно не нужен — `tiktok-phone.js` внедряет код сам) |
+| `client/launcher.js` | пример `launcher.js` со строкой `load('./tiktok-phone.js')` |
 
-Обязательно чтобы `launcher.js` содержал строку:
+## Установка
 
-```js
-load('./tiktok-phone.js');
-```
-
-## Установка вручную
-
-1. Скачай `tiktok-phone.js`, положи рядом с `launcher.js`.
-2. Открой `launcher.js` и добавь после `load('./mod-loader.js');` строку `load('./tiktok-phone.js');`.
+1. Положи `tiktok-phone.js` рядом с `launcher.js`.
+2. Добавь в `launcher.js` после `load('./mod-loader.js');` строку `load('./tiktok-phone.js');`.
 3. Запусти `start.bat`.
 
-## Автоматически
-
-Положи этот репозиторий рядом с папкой `FreakRating-Clean` и запусти:
-
-```powershell
-.\install.ps1
-```
-
-После установки F8 открывает TikTok. Чтобы убрать — удали строку из `launcher.js` и файл `tiktok-phone.js`.
+Автоматически: положи репозиторий рядом с `FreakRating-Clean` и запусти `.\install.ps1`.
